@@ -23,7 +23,18 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+.red{
+  background-color: red;
+}
+.yellow{
+  background-color: yellow;
+}
+.black{
+  background-color: black;
+}
+.green{
+  background-color: green;
+}
 .App-link {
   color: #61dafb;
 }

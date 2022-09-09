@@ -1,4 +1,5 @@
 import React from "react";
+import Oportunidad from "./Oportunidad";
 
 const Oportunidades = () => {
   return (
@@ -16,34 +17,35 @@ const Oportunidades = () => {
         </article>
 
         <div id="contenedorIconos">
-          <div className="iconos" style={{ backgroundColor: " rgb(220,53,69)" }}>
-            <div>
-              <img src="icono-mano.png" className="tamIcono" />
-              <img id="cruzRoja" src="icono-mas.png" className="tamIconoCruz" />
-            </div>
-            <p>Ser voluntario</p>
-          </div>
-          <div className="iconos" style={{ backgroundColor: "rgb(255, 156, 7)" }}>
-            <div>
-              <img src="icono-mano-corazon.png" className="tamIcono" />
-              <img src="icono-mas.png" className="tamIconoCruz" />
-            </div>
-            <p>Donar</p>
-          </div>
-          <div className="iconos" style={{ backgroundColor: "rgb(40,167,69)" }}>
-            <div>
-              <img src="icono-reciclar.png" className="tamIcono" />
-              <img src="icono-mas.png" className="tamIconoCruz" />
-            </div>
-            <p>Reciclar</p>
-          </div>
-          <div className="iconos" style={{ backgroundColor: "rgb(23,162,184)" }}>
-            <div>
-              <img src="icono-maletin.png" className="tamIcono" />
-              <img src="icono-mas.png" className="tamIconoCruz" />
-            </div>
-            <p>Llamados laborales</p>
-          </div>
+          <Oportunidad
+            rutaImg={"icono-mano.png"}
+            idImg={"cruzRoja"}
+            color={"red"}
+            text={"Ser voluntario"}
+          ></Oportunidad>
+
+          <Oportunidad
+            rutaImg={"icono-mano-corazon.png"}
+            idImg={"img2"}
+            color={"green"}
+            text={"Donar"}
+          ></Oportunidad>
+
+          <Oportunidad
+            rutaImg={"icono-reciclar.png"}
+            idImg={"img3"}
+            color={"yellow"}
+            text={"Reciclar"}
+          ></Oportunidad>
+
+          <Oportunidad
+            rutaImg={"icono-maletin.png"}
+            idImg={"img4"}
+            color={"black"}
+            text={"Llamados laborales"}
+          ></Oportunidad>
+
+          
         </div>
       </div>
     </React.Fragment>
